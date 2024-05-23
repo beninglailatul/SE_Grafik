@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Team 22 Medan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Feather Icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="https://revou.co/">
+          <img src="./img/Logo-Hor.png" alt="logo" class="logo" />
+        </a>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="search-icon">
+          <a href="#" id="search"><i data-feather="search"></i></a>
+        </div>
+      </nav>
+<!-- dashboard -->
+<section class="dashboard" id="dashboard">
+  <h1>Dashboard</h1>
+      <h2>Our Summary Report</h2><br>
+    <div id="Dashboard"> 
+      <div class="grid-container">
+        <div class="judul">
+          <h1>Pizza Sales Report</h1>
+        </div>
+        <div class="category"> 
+          <p> choose pizza Category</p>
+            <label><input type="checkbox" value="Classic" checked>Classic</label>
+            <label><input type="checkbox" value="Veggie" checked>Veggie</label>
+            <label><input type="checkbox" value="Chicken" checked>Chicken</label>
+            <label><input type="checkbox" value="Supreme" checked>Supreme</label>
+        </div>
+        <div class="totalOrder">Total Order</div>  
+        <div class="totalRevenue">Total Revenue</div>
+        <div class="totalSales">Total Sales</div>
+        <div class="revenueChart">Monthly Revenue Chart (line chart)
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="Size">
+          <p>Choose Pizza Size</p>
+          <label>
+            <input type="checkbox" value="s" checked>S
+            <input type="checkbox" value="m" checked>M
+            <input type="checkbox" value="l" checked>L
+          </label>
+          <label>
+            <input type="checkbox" value=""xl checked>XL
+            <input type="checkbox" value="xxl" checked>XXL
+          </label>
+        </div>
+        <div class="revenueCategory">Revenue per Pizza Category</div>
+        <div class="salesChart">Monthly Sales Chart (line chart)</div>
+        <div class="sizeChart">Sales per Pizza Size (Pie Chart)</div>
+        <div class="salesCategory">Sales per Pizza Category</div>
+      </div>
+    </div>
+</section>
+       <!-- Footer -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="feedback.html">Beri Feedback</a>
+      </div>
+  
+
+      <div class="credit">
+        <p>Created by <a href="">SECTION MEDAN TEAM 22</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
